@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ricotta Chocolate Chip Cookies</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+      <h1>Ricotta Chocolate Chip Cookies</h1>
+      <img src="img/finalcookies.jpeg" alt="Cookies Baked" id="cookie">
+      <p>
+      <button id="before">Cookies!</button>
+      <button id="after"> More! </button>
+      </p>
+      <script type="text/javascript">
+           $(document).ready(function(){
+                 //all js goes in here
+                 //the code below adds the class chubbySquare to the demo box
+                 $( "#before" ).click(function() {
+                       $("#cookie").fadeOut(1000);
+                   });
+                   //the code below adds the class tealCircle to the demo box
+                   $("#after").mouseup(function(){
+                       $("#cookie").fadeIn(1000);
+                   });
+
+               });
+       </script>
+  </header>
+<div class="intro">
+  <p>
+    There are few things more satisfying than a warm and gooey chocolate chip cookie. Whether you're celebrating a happy occasion, frustrated with school work or craving something sweet these Ricotta Chocolate Chip cookies are sure to bring joy. I obtained this recipe from my sister, Jamie who attends Syracuse University. She is a sister of Sigma Delta Tau (SDT) and this delicious recipe was created by Tom Sharinger, the SDT house chef. He created this recipe over 20 years ago after much trial and error. This recipe is a SDT house favorite and is quite coveted by its members. Toms parting gift to seniors is this recipe that is supposed to remain hidden to the rest of the undergraduates. These cookies are one of the best I have ever had and I hope you enjoy as much as I did.
+</p>
+<p>
+  <h2>Ingredients</h2>
+<ul>
+<li>4oz softened Butter</li>
+<li>1/2 cup packed Light Brown Sugar</li>
+<li>1 Egg</li>
+<li>1 cup Ricotta Cheese</li>
+<li>1/4 tsp Salt</li>
+<li>1/4 tsp Baking Soda</li>
+<li>3/4 tsp Baking Powder</li>
+<li>2 cups Almond Flour</li>
+<li>1 and 1/2 cup Semi Sweet Mini Chocolate Chips</li>
+</ul>
+
+<div id="slideshow">
+  <div>
+    <img src="img/butter.jpeg" alt="Ingredients: Butter">
+</div>
+<div>
+  <img src="img/brownsug.jpeg" alt="Ingredients: Brown Sugar">
+</div>
+<div>
+  <img src="img/egg.jpeg" alt="Ingredients: Egg">
+</div>
+<div>
+  <img src="img/ricotta.jpeg" alt="Ingredients: Ricotta">
+</div>
+<div>
+<img src="img/salt.jpeg" alt="Ingredients: Salt">
+</div>
+<div>
+  <img src="img/bakingsoda.jpeg" alt="Ingredients: Baking Soda">
+</div>
+<div>
+  <img src="img/bakingpowder.jpeg" alt="Ingredients: Baking Powder">
+</div>
+<div>
+<img src="img/almondflour.jpeg" alt="Ingredients: Almond Flour">
+</div>
+<div>
+  <img src="chochips.jpeg" alt="Ingredients: Chocolate Chips">
+</div>
+</div>
+<p>
+<a href="index.html"><-back</a>
+</p>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //hide all divs except the first
+      $("#slideshow > div:gt(0)").hide();
+
+      //next slide
+      setInterval(function() {
+        $('#slideshow > div:first')
+          .fadeOut(1000)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo('#slideshow');
+          //3000 milliseconds
+      },  3000);
+
+        });
+</script>
+<p>
+  <h2>Steps</h2>
+
+</p>
+
+    <div class="accordion">
+
+    <h2><a href="">Wet Ingredients</a></h2>
+    <p>
+      In a large mixing bowl, add the softened butter and brown sugar. Whip these two ingredients together until it is a light and fluffy consistency.Once the desired consistency is reached, add the egg and ricotta cheese. Whip all the ingredients together.
+      <br>
+      <img src="img/mix2.jpeg" alt="All Wet Ingredients">
+    </p>
+    <h2><a href="">Dry Ingredients</a></h2>
+    <p>In another mixing bowl comine the salt, baking soda, baking powder and almond flour. Combine the wet and dry ingredients in increments. Using a fork or your hands fold all ingredients together.
+When the ingredients are thoroughly mixed together add the chocolate chips and mix them evenly through the batter.
+<br>
+<img src="img/mixchoc.jpeg" alt="Chocolate Chips mixed in">
+    </p>
+
+    <h2><a href="">Baking Instructions</a></h2>
+    <p>
+<ol>
+  Preheat oven to 350 degrees.
+  </ol>
+  <ol>
+  Line a baking sheet with parchment paper and use a non-stick substance (butter, oil, etc.) of your choice.
+  </ol>
+  <ol>
+    Using either your hands or a ice-cream scooper, make 2-inch balls of batter and place on cookie cookie sheet.
+  </ol>
+  <ol>
+    Cook for 12-14 minutes or unitl cookies are golden brown.
+  </ol>
+<br>
+<img src="img/scooped.jpeg" alt="Cookies scooped on baking sheet">
+    </div>
+    <p>
+      <a href="index.html"><- back</a>
+    </p>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          var allPanels = $('.accordion > p').hide();
+
+          $('.accordion > h2 > a').click(function() {
+            allPanels.slideUp();
+            $(this).parent().next().slideDown();
+            return false;
+          });
+
+            });
+    </script>
+    <p>
+               Optional Secret Ingredient!
+           </p>
+           <p>
+          <div class="demobox">
+              Orange Zest
+          </div>
+           </p>
+           <p>
+               <button id="myButt">Reveal Here!</button>
+           </p>
+           <p>
+             <a href="index.html"><- back</a>
+           </p>
+           <!-- Your JQuery goes here, the "script" element s usually places before the /body tag -->
+           <script type="text/javascript">
+               $(document).ready(function(){
+                     //all js goes in here
+                     //the code below toggles between show hide
+                     $( "#myButt" ).click(function() {
+                           $(".demobox").toggle(1000);
+                       });
+
+                   });
+           </script>
+
+
+
+
+
+
+
+
+</body>

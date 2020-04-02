@@ -5,19 +5,67 @@ header {
   display: block;
   text-align: center;
   color: black;
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Acme', sans-serif;
+}
+h2 {
+  color: black;
+  font-size: 36px;
+  font-family: 'Acme', sans-serif;
 }
 .intro {
   color: black;
-  font-family: 'Comic Neue', cursive;
-
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
 }
 div {
   margin: 20px;
-text-align: auto;
 }
 img {
   width: 300px;
   height: 300px;
   border: 3px solid black;
+}
+.shim {
+  height: 300px;
+}
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.accordion h3,
+.accordion p {
+  padding: 10px;
+  border-bottom: 0;
+}
+.accordion h3:last-of-type,
+.accordion p:last-of-type {
+  border-bottom: 1px solid black;
+}
+.accordion h3 a,
+.accordion p a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+.accordion h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.secretingredient{
+  font-size: 26px;
 }

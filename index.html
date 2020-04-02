@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Ricotta Chocolate Chip Cookies</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=EB+Garamond&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
       <h1>Ricotta Chocolate Chip Cookies</h1>
-      <img src="img/finalcookies.jpeg" alt="Cookies Baked" id="cookie">
+      <div class= "shim"><img src="img/finalcookies.jpeg" alt="Cookies Baked" id="cookie" style=""></div>
       <p>
       <button id="before">Cookies!</button>
       <button id="after"> More! </button>
@@ -35,6 +35,7 @@
   <p>
     There are few things more satisfying than a warm and gooey chocolate chip cookie. Whether you're celebrating a happy occasion, frustrated with school work or craving something sweet these Ricotta Chocolate Chip cookies are sure to bring joy. I obtained this recipe from my sister, Jamie who attends Syracuse University. She is a sister of Sigma Delta Tau (SDT) and this delicious recipe was created by Tom Sharinger, the SDT house chef. He created this recipe over 20 years ago after much trial and error. This recipe is a SDT house favorite and is quite coveted by its members. Toms parting gift to seniors is this recipe that is supposed to remain hidden to the rest of the undergraduates. These cookies are one of the best I have ever had and I hope you enjoy as much as I did.
 </p>
+</div>
 <p>
   <h2>Ingredients</h2>
 <ul>
@@ -79,7 +80,6 @@
 </div>
 </div>
 <p>
-<a href="index.html"><-back</a>
 </p>
 <script type="text/javascript">
     $(document).ready(function(){
@@ -101,49 +101,36 @@
 </script>
 <p>
   <h2>Steps</h2>
-
-</p>
-
     <div class="accordion">
-
-    <h2><a href="">Wet Ingredients</a></h2>
+    <h3><a href="">Wet Ingredients</a></h3>
     <p>
       In a large mixing bowl, add the softened butter and brown sugar. Whip these two ingredients together until it is a light and fluffy consistency.Once the desired consistency is reached, add the egg and ricotta cheese. Whip all the ingredients together.
       <br>
+      <br>
       <img src="img/mix2.jpeg" alt="All Wet Ingredients">
     </p>
-    <h2><a href="">Dry Ingredients</a></h2>
-    <p>In another mixing bowl comine the salt, baking soda, baking powder and almond flour. Combine the wet and dry ingredients in increments. Using a fork or your hands fold all ingredients together.
+    <h3><a href="">Dry Ingredients</a></h3>
+    <p>
+    In another mixing bowl comine the salt, baking soda, baking powder and almond flour. Combine the wet and dry ingredients in increments. Using a fork or your hands fold all ingredients together.
 When the ingredients are thoroughly mixed together add the chocolate chips and mix them evenly through the batter.
-<br>
+  <br>
+  <br>
 <img src="img/mixchoc.jpeg" alt="Chocolate Chips mixed in">
     </p>
-
-    <h2><a href="">Baking Instructions</a></h2>
+    <h3><a href="">Baking Instructions</a></h3>
     <p>
-<ol>
-  Preheat oven to 350 degrees.
-  </ol>
-  <ol>
-  Line a baking sheet with parchment paper and use a non-stick substance (butter, oil, etc.) of your choice.
-  </ol>
-  <ol>
-    Using either your hands or a ice-cream scooper, make 2-inch balls of batter and place on cookie cookie sheet.
-  </ol>
-  <ol>
-    Cook for 12-14 minutes or unitl cookies are golden brown.
-  </ol>
-<br>
-<img src="img/scooped.jpeg" alt="Cookies scooped on baking sheet">
+  Preheat oven to 350 degrees.Line a baking sheet with parchment paper and use a non-stick substance (butter, oil, etc.) of your choice.
+Using either your hands or a ice-cream scooper, make 2-inch balls of batter and place on cookie cookie sheet. Cook for 12-14 minutes or unitl cookies are golden brown.
+  <br>
+  <br>
+    <img src="img/scooped.jpeg" alt="Cookies scooped on baking sheet">
+  </p>
     </div>
-    <p>
-      <a href="index.html"><- back</a>
-    </p>
     <script type="text/javascript">
         $(document).ready(function(){
           var allPanels = $('.accordion > p').hide();
 
-          $('.accordion > h2 > a').click(function() {
+          $('.accordion > h3 > a').click(function() {
             allPanels.slideUp();
             $(this).parent().next().slideDown();
             return false;
@@ -151,37 +138,20 @@ When the ingredients are thoroughly mixed together add the chocolate chips and m
 
             });
     </script>
-    <p>
-               Optional Secret Ingredient!
-           </p>
-           <p>
-          <div class="demobox">
-              Orange Zest
-          </div>
-           </p>
-           <p>
-               <button id="myButt">Reveal Here!</button>
-           </p>
-           <p>
-             <a href="index.html"><- back</a>
-           </p>
-           <!-- Your JQuery goes here, the "script" element s usually places before the /body tag -->
-           <script type="text/javascript">
-               $(document).ready(function(){
-                     //all js goes in here
-                     //the code below toggles between show hide
-                     $( "#myButt" ).click(function() {
-                           $(".demobox").toggle(1000);
-                       });
-
+    <div class="secretingredient">
+      <p>
+        Reveal *optional* secret ingredient below.
+      </div>
+       <p>
+           <button id="secretingbutton">Click here!!</button>
+       </p>
+       <script type="text/javascript">
+           $(document).ready(function(){
+                 $( "#secretingbutton" ).click(function() {
+                       $(".secretingredient").html("<p>Orange Zest</p>");
                    });
-           </script>
 
+               });
+       </script>
 
-
-
-
-
-
-
-</body>
+   </body>
